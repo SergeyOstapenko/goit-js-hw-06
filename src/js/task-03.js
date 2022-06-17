@@ -19,6 +19,5 @@ images.map((elem) => {
   const item = list.insertAdjacentHTML(
     "afterbegin",
     `<li><img src="${elem.url}" alt="${elem.alt}" width=200px/></li>`
-
   );
 });
