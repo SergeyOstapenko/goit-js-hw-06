@@ -15,9 +15,10 @@ const images = [
 
 const list = document.querySelector(".gallery");
 
-images.map((elem) => {
-  const item = list.insertAdjacentHTML(
+const listItems = images.map((elem) => {
+
+  const items = list.insertAdjacentHTML(
     "afterbegin",
     `<li><img src="${elem.url}" alt="${elem.alt}" width=200px/></li>`
-  );
+  ); return items;
 });
